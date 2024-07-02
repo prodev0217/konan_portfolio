@@ -1,85 +1,155 @@
-# Portfolio
-React Website To Build My Portfolio (Source Code of the Website)
+<p align="center" width="100%">
+    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
+</p>
 
-![New Project](https://github.com/Yazan98/portfolio/blob/v3/design/header.png?raw=true)
+---
+# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
 
-## Screenshots
-You can See Main Pages of the website in this [Link](https://github.com/Yazan98/portfolio/tree/master/screenshots)
+---
 
-## Description
-Personal Website To Show The Projects Documentation, View On Github and Describe Each Project with Amazing Design Built With React.js, JSX, Mobile Responsive Design , This Project Built Based on Airbnb Eslint Rules
+# Developer Portfolio
 
-#### Components
-1. React Router
-2. Typescript
-3. Create React App
-4. Tailwind CSS
-5. Bootstrap
-6. Node SASS
-7. Firebase Hosting
-8. PWA
-9. Responsive Design
-10. JSX
-11. React Hooks
+### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
 
-## Features
-1. Responsive Design Built with Tailwind CSS
-2. Multi Page Layout
-3. Dynamic Lists (Pages Content inside Loops)
+---
 
-## Project Pages
-1. Home Page
-2. Projects Page
-3. All Projects Page
-4. Skills Page
-5. Archive Page
-6. App Page
-7. Mobile Navigation Page
-8. Not Found Page
+# Demo :movie_camera:
 
-## Project History
-1. Simple Page Built with Vue.js
-2. Refactor To Angular 8
-3. Refactor To React.js (Typescript, PWA)
-4. Refactor To React.js Material UI
-5. Refactor To React.js Tailwind CSS
+![](./public/image/screen.png)
 
-## Project Deployment
-1. Main Website (https://www.yazantarifi.com)
-2. Github Pages (https://yazan98.github.io)
-3. Firebase Hosting (https://portfolio-v2-67ceb.web.app/)
+## View live preview [here](https://abusaid.netlify.app/).
 
-### Commands List
-```
-1. Deploy Test Version On Firebase : npx firebase deploy
-2. Generate Production Build (Without Map Files) : npm run build
-3. Run Project Locally : npm start
-```
+---
 
-## Start The Project
-> 1. npm install
-> 2. npm start
-> 3. npm run build
+## Table of Contents :scroll:
 
-## Branches Description
-1. master (Latest Source Code)
-2. v2.x Version 2 of The Website (Dark, Light Mode)
-3. v3 Version 3 of the Website (Dynamic Components)
+- [Sections](#sections-bookmark)
+- [Demo](#demo-movie_camera)
+- [Installation](#installation-arrow_down)
+- [Getting Started](#getting-started-dart)
+- [Usage](#usage-joystick)
+- [Packages Used](#packages-used-package)
 
-## Docker Information
+---
 
-Docker Repository Link
-> https://hub.docker.com/repository/docker/yt98/portfolio-website
+# Sections :bookmark:
 
-Execute The Following Commands to Run Docker Image
+- HERO SECTION
+- ABOUT ME
+- EXPERIENCE
+- SKILLS
+- PROJECTS
+- EDUCATION
+- BLOG
+- CONTACTS
 
-Pull The Image to Your Device Then Run the Image on Port 3000
+---
+
+# Installation :arrow_down:
+
+### You will need to download Git and Node to run this project
+
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+
+#### Make sure you have the latest version of both Git and Node on your computer.
 
 ```
-docker pull yt98/portfolio-website:v3
-docker run --name portfolio -p 3000:3000 -d yt98/portfolio-website:v3
+node --version
+git --version
 ```
 
-## License
-Copyright (C) 2021 Portfolio is An Open Source Project (Licensed under the MIT License)
+## <br />
 
+# Getting Started :dart:
+
+### Fork and Clone the repo
+
+To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+
+```
+git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+
+cd developer-portfolio
+```
+
+### Install packages from the root directory
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+---
+
+# Usage :joystick:
+
+Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
+
+Eg:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID =
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
+NEXT_PUBLIC_GTM = # For site analytics
+NEXT_PUBLIC_APP_URL = "http://127.0.0.1:3000"
+NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
+```
+
+### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+
+Eg:
+
+```javascript
+export const personalData = {
+  name: "Winston Sosa",
+  profile: "/profile.png",
+  designation: "Full-Stack Software Developer",
+  description: "My name is Winston Sosa....",
+  email: "abusaid7388@gmail.com",
+  phone: "+8801608797655",
+  address: "Dhaka, Bangladesh",
+  github: "https://github.com/said7388",
+  facebook: "https://www.facebook.com/abusaid.riyaz/",
+  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
+  twitter: "https://twitter.com/said7388",
+  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
+  leetcode: "https://leetcode.com/said3812/",
+  devUsername: "said7388",
+  resume: "...",
+};
+```
+
+`devUsername` Used for fetching blog from `dev.to`.
+
+---
+
+---
+
+# Packages Used :package:
+
+| Used Package List  |
+| :----------------: |
+|        next        |
+|  @emailjs/browser  |
+|    lottie-react    |
+| react-fast-marquee |
+|    react-icons     |
+|   react-toastify   |
+|        sass        |
+|    tailwindcss     |
+
+---
